@@ -1,0 +1,84 @@
+{
+  "name": "bulb",
+  "version": "1.0.0",
+  "author": "SimonMa <1755811882@qq.com>",
+  "license": "LGPI-3.0",
+  "private": true,
+  "homepage": "http://tomotoes.com",
+  "repository": "https://github.com/tomotoes",
+  "bugs": "https://github.com/tomotoes/light/issues",
+  "description": "Smart home",
+  "keywords": [
+    "admin",
+    "vue",
+    "koa",
+    "mongodb"
+  ],
+  "engines": {
+    "node": ">=8.0"
+  },
+  "cpu": [
+    "x64"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test": "vue-cli-service test",
+    "lint": "vue-cli-service lint",
+    "start": "vue-cli-service serve && nodemon server && nodemon server/db && nodemon server/file",
+    "start:front": "vue-cli-server",
+    "start:back": "nodemon server",
+    "stop": "pm2 stop server/index.js",
+    "restart": "pm2 restart server/index.js"
+  },
+  "dependencies": {
+    "@vue/babel-preset-app": "^4.3.1",
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "chalk": "^2.4.1",
+    "element-ui": "^2.3.7",
+    "ip": "^1.1.5",
+    "js-cookie": "^2.2.0",
+    "jsonwebtoken": "^8.2.1",
+    "kcors": "^2.2.1",
+    "koa": "^2.5.1",
+    "koa-body": "^2.5.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-jwt": "^3.3.1",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.8.1",
+    "koa-static": "^4.0.2",
+    "koa-static-cache": "^5.1.2",
+    "log4js": "^2.5.3",
+    "mongoose": "^5.0.17",
+    "normalize.css": "^8.0.0",
+    "register-service-worker": "^1.0.0",
+    "svg-captcha": "^1.3.11",
+    "vue": "^2.5.16",
+    "vue-class-component": "^6.2.0",
+    "vue-property-decorator": "^6.0.0",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-beta.6",
+    "@vue/cli-plugin-pwa": "^3.0.0-beta.6",
+    "@vue/cli-service": "^3.0.0-beta.6",
+    "pug": "^2.0.3",
+    "pug-loader": "^2.4.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "vue-template-compiler": "^2.5.13"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "Android >= 4.4",
+    "iOS >= 8",
+    "Chrome >= 46",
+    "ff >= 43",
+    "ie >= 9"
+  ]
+}
