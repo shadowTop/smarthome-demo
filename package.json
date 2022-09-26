@@ -51,7 +51,7 @@
     "koa-session": "^5.8.1",
     "koa-static": "^4.0.2",
     "koa-static-cache": "^5.1.2",
-    "log4js": "^2.5.3",
+    "log4js": "^6.6.1",
     "mongoose": "^5.0.17",
     "normalize.css": "^8.0.0",
     "register-service-worker": "^1.0.0",
